@@ -1,0 +1,101 @@
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 40px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.main-menu h1 {
+  font-size: 48px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-top: 40px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.menu-buttons button {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+/* Theme-specific styles */
+.main-menu.dark {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.main-menu.light {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+
+.main-menu.colorful {
+  background-color: #1a0933;
+  color: white;
+}
+
+.dark .menu-buttons button {
+  background-color: #0f3460;
+  color: white;
+}
+
+.dark .menu-buttons button:hover {
+  background-color: #4caf50;
+  transform: scale(1.05);
+}
+
+.light .menu-buttons button {
+  background-color: #2c6e31;
+  color: white;
+}
+
+.light .menu-buttons button:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+.colorful .menu-buttons button {
+  background-color: #4a1259;
+  color: white;
+}
+
+.colorful .menu-buttons button:hover {
+  background-color: #8a2be2;
+  transform: scale(1.05);
+}
+
+/* Theme-specific header styles */
+.dark h1 {
+  color: #4caf50;
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+.light h1 {
+  color: #2c6e31;
+  text-shadow: 0 0 10px rgba(44, 110, 49, 0.3);
+}
+
+.colorful h1 {
+  color: #00ff88;
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+} 

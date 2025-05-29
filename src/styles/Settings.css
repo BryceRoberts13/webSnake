@@ -1,0 +1,216 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Theme-specific styles */
+.settings.dark {
+  background-color: #282c34;
+}
+
+.settings.light {
+  background-color: #f0f0f0;
+}
+
+.settings.colorful {
+  background-color: #2c1752;
+}
+
+.settings-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.settings-header h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Theme-specific header styles */
+.settings.dark .settings-header h1 {
+  color: #4caf50;
+}
+
+.settings.light .settings-header h1 {
+  color: #2e7d32;
+}
+
+.settings.colorful .settings-header h1 {
+  color: #00ff9d;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Theme-specific back button styles */
+.settings.dark .back-button {
+  color: #4caf50;
+  border: 2px solid #4caf50;
+}
+
+.settings.dark .back-button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.settings.light .back-button {
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
+}
+
+.settings.light .back-button:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.settings.colorful .back-button {
+  color: #00ff9d;
+  border: 2px solid #00ff9d;
+}
+
+.settings.colorful .back-button:hover {
+  background-color: #00ff9d;
+  color: #2c1752;
+}
+
+.settings-content {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.setting-group {
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+/* Theme-specific setting group styles */
+.settings.dark .setting-group {
+  background-color: #1a1c20;
+  border: 2px solid #4a4a4a;
+}
+
+.settings.light .setting-group {
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+}
+
+.settings.colorful .setting-group {
+  background-color: #1a0f35;
+  border: 2px solid #4a1b7f;
+}
+
+.setting-group h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+/* Theme-specific heading styles */
+.settings.dark .setting-group h2 {
+  color: #4caf50;
+}
+
+.settings.light .setting-group h2 {
+  color: #2e7d32;
+}
+
+.settings.colorful .setting-group h2 {
+  color: #00ff9d;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.setting-item:last-child {
+  margin-bottom: 0;
+}
+
+.setting-item label {
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+/* Theme-specific label styles */
+.settings.dark .setting-item label {
+  color: white;
+}
+
+.settings.light .setting-item label {
+  color: #333333;
+}
+
+.settings.colorful .setting-item label {
+  color: #00ff9d;
+}
+
+.setting-item select {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 150px;
+  transition: all 0.3s ease;
+}
+
+/* Theme-specific select styles */
+.settings.dark .setting-item select {
+  background-color: #282c34;
+  color: white;
+  border: 2px solid #4a4a4a;
+}
+
+.settings.dark .setting-item select:focus {
+  border-color: #4caf50;
+}
+
+.settings.light .setting-item select {
+  background-color: #f5f5f5;
+  color: #333333;
+  border: 2px solid #cccccc;
+}
+
+.settings.light .setting-item select:focus {
+  border-color: #2e7d32;
+}
+
+.settings.colorful .setting-item select {
+  background-color: #1a0f35;
+  color: #00ff9d;
+  border: 2px solid #4a1b7f;
+}
+
+.settings.colorful .setting-item select:focus {
+  border-color: #00ff9d;
+}
+
+.setting-item select:focus {
+  outline: none;
+}
+
+.setting-item select option {
+  padding: 8px;
+} 

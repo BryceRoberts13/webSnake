@@ -1,0 +1,137 @@
+.high-scores {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(5px);
+}
+
+.high-scores h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.scores-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.score-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 12px 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.score-header .rank-score {
+  display: flex;
+  gap: 80px;
+}
+
+.header-rank {
+  min-width: 40px;
+}
+
+.header-date {
+  min-width: 80px;
+  text-align: right;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rank-score {
+  display: flex;
+  align-items: center;
+}
+
+.rank {
+  font-size: 24px;
+  min-width: 40px;
+}
+
+.score-value {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  min-width: 80px;
+  text-align: right;
+}
+
+.date {
+  font-size: 14px;
+  opacity: 0.8;
+  min-width: 80px;
+  text-align: right;
+}
+
+.no-scores {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+/* Theme-specific styles */
+.dark .score-item {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.light .score-item {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.colorful .score-item {
+  background-color: rgba(138, 43, 226, 0.15);
+}
+
+/* Special styling for top ranks */
+.rank-1 {
+  background-color: rgba(255, 215, 0, 0.15) !important;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.rank-2 {
+  background-color: rgba(192, 192, 192, 0.15) !important;
+  border: 1px solid rgba(192, 192, 192, 0.3);
+}
+
+.rank-3 {
+  background-color: rgba(205, 127, 50, 0.15) !important;
+  border: 1px solid rgba(205, 127, 50, 0.3);
+}
+
+.rank-1 .score-value {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.rank-2 .score-value {
+  color: #c0c0c0;
+  text-shadow: 0 0 10px rgba(192, 192, 192, 0.3);
+}
+
+.rank-3 .score-value {
+  color: #cd7f32;
+  text-shadow: 0 0 10px rgba(205, 127, 50, 0.3);
+} 
